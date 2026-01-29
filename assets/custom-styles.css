@@ -79,6 +79,12 @@
     transition: transform var(--animation-speed, 0.2s) ease;
 }
 
+.accordion-group__icon svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+}
+
 .accordion-group__item[open] .accordion-group__icon {
     transform: rotate(180deg);
 }
