@@ -73,33 +73,19 @@
 
 .accordion-group__icon {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px !important;
-    height: 24px !important;
-    min-width: 24px !important;
-    min-height: 24px !important;
-    flex: 0 0 24px !important;
-    flex-shrink: 0 !important;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    flex-shrink: 0;
     transition: transform var(--animation-speed, 0.2s) ease;
 }
 
 .accordion-group__icon svg {
-    width: 100% !important;
-    height: 100% !important;
-    flex: 0 0 auto !important;
-    flex-shrink: 0 !important;
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+    flex-shrink: 0;
     display: block;
-}
-
-/* Ensure summary icons inside accordion group keep full size even with global svg-wrapper defaults */
-.accordion-group summary .svg-wrapper {
-    width: 24px !important;
-    height: 24px !important;
-    min-width: 24px !important;
-    min-height: 24px !important;
-    flex: 0 0 24px !important;
-    flex-shrink: 0 !important;
 }
 
 .accordion-group__item[open] .accordion-group__icon {
