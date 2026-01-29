@@ -12,12 +12,14 @@
     {{ block.shopify_attributes }}
   >
     <summary class="details__header">
-      {% render 'icon-or-image',
-        icon: block_settings.icon,
-        image_upload: block_settings.image_upload,
-        width: block_settings.width,
-        class_name: 'details__icon'
-      %}
+      {% if block_settings.icon != 'none' or block_settings.image_upload %}
+        {% render 'icon-or-image',
+          icon: block_settings.icon,
+          image_upload: block_settings.image_upload,
+          width: block_settings.width,
+          class_name: 'details__icon'
+        %}
+      {% endif %}
       <h2 class="details__heading">
         {{ block_settings.heading }}
       </h2>
@@ -45,7 +47,7 @@
     font: inherit;
     font-size: 0.875rem;
     font-family: var(--font-body--family);
-    padding-left: 10px;
+    padding-left: 0;
   }
 {% endstylesheet %}
 
