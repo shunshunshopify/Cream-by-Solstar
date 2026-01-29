@@ -75,6 +75,7 @@
     display: inline-flex;
     width: 20px;
     height: 20px;
+    flex: 0 0 20px;
     transition: transform var(--animation-speed, 0.2s) ease;
 }
 
