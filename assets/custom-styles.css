@@ -13,63 +13,13 @@
     border: none;
 }
 
-/* Accordion group (ported from Broadcast) */
-.accordion-group {
+/* FAQ Accordion (Broadcast-like styling) */
+.accordion {
     position: relative;
-    --accordion-outer: 50px;
-    --accordion-outer-medium: 30px;
-    --accordion-outer-small: 16px;
-    --accordion-content-max: 1100px;
-    --accordion-content-max-narrow: 670px;
-}
-
-@media screen and (max-width: 989px) and (min-width: 750px) {
-    .accordion-group {
-        --accordion-outer: var(--accordion-outer-medium);
-    }
-}
-
-@media screen and (max-width: 749px) {
-    .accordion-group {
-        --accordion-outer: var(--accordion-outer-small);
-    }
-}
-
-.accordion-group__inner {
     width: 100%;
-    max-width: var(--accordion-content-max);
-    margin: 0 auto;
-    padding-left: var(--accordion-outer);
-    padding-right: var(--accordion-outer);
 }
 
-.accordion-group__inner.wrapper--narrow {
-    max-width: var(--accordion-content-max-narrow);
-}
-
-.accordion-group__inner.wrapper--full {
-    max-width: none;
-}
-
-.accordion-group__items {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(var(--accordion-columns, 1), minmax(0, 1fr));
-    align-items: start;
-}
-
-@media screen and (max-width: 749px) {
-    .accordion-group__items {
-        grid-template-columns: 1fr;
-    }
-}
-
-.accordion-group__heading {
-    grid-column: 1 / -1;
-    margin: 0 0 0.75rem;
-}
-
-.accordion-group__item {
+.accordion accordion-custom .details {
     border: 1px solid rgb(var(--color-border-rgb, var(--color-foreground-rgb, 0 0 0)) / 0.15);
     border-radius: var(--style-border-radius, 12px);
     background: var(--color-background);
@@ -78,7 +28,11 @@
     text-align: left;
 }
 
-.accordion-group__title {
+.accordion accordion-custom:not(:last-child) .details {
+    margin-bottom: 12px;
+}
+
+.accordion .details__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,16 +46,18 @@
     list-style: none;
 }
 
-.accordion-group__title::-webkit-details-marker {
+.accordion .details__header::-webkit-details-marker {
     display: none;
 }
 
-.accordion-group__title-text {
+.accordion .details__heading {
+    margin: 0;
+    font: inherit;
     flex: 1;
 }
 
-.accordion-group__icon {
-    display: inline-flex;
+.accordion .icon-caret,
+.accordion .icon-plus {
     width: 20px;
     height: 20px;
     flex: 0 0 20px;
@@ -109,23 +65,16 @@
     transition: transform var(--animation-speed, 0.2s) ease;
 }
 
-.accordion-group__icon svg {
-    width: 100%;
-    height: 100%;
-    flex: 0 0 auto;
-    flex-shrink: 0;
-    display: block;
-}
-
-.accordion-group__item[open] .accordion-group__icon {
+.accordion .details[open] .icon-caret,
+.accordion .details[open] .icon-plus {
     transform: rotate(180deg);
 }
 
-.accordion-group__body {
+.accordion .details-content {
     padding: 0 0 1rem;
     border-top: 1px solid rgb(var(--color-border-rgb, var(--color-foreground-rgb, 0 0 0)) / 0.1);
 }
 
-.accordion-group__content {
+.accordion .details-content > * {
     margin-top: 1rem;
 }
