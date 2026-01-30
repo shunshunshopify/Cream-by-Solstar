@@ -608,7 +608,7 @@
             "accordion_row_wtKxLk": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "missing translation: \"t:text_defaults.faq\"",
+                "heading": "t:text_defaults.faq",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
