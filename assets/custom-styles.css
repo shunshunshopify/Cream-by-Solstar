@@ -16,10 +16,39 @@
 /* Accordion group (ported from Broadcast) */
 .accordion-group {
     position: relative;
+    --accordion-outer: 50px;
+    --accordion-outer-medium: 30px;
+    --accordion-outer-small: 16px;
+    --accordion-content-max: 1100px;
+    --accordion-content-max-narrow: 670px;
+}
+
+@media screen and (max-width: 989px) and (min-width: 750px) {
+    .accordion-group {
+        --accordion-outer: var(--accordion-outer-medium);
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .accordion-group {
+        --accordion-outer: var(--accordion-outer-small);
+    }
 }
 
 .accordion-group__inner {
     width: 100%;
+    max-width: var(--accordion-content-max);
+    margin: 0 auto;
+    padding-left: var(--accordion-outer);
+    padding-right: var(--accordion-outer);
+}
+
+.accordion-group__inner.wrapper--narrow {
+    max-width: var(--accordion-content-max-narrow);
+}
+
+.accordion-group__inner.wrapper--full {
+    max-width: none;
 }
 
 .accordion-group__items {

@@ -1,5 +1,6 @@
 {%- liquid
   assign columns = section.settings.columns | default: 1
+  assign content_width = section.settings.content_width | default: 'wrapper'
 -%}
 
 {%- style -%}
@@ -22,7 +23,7 @@
   data-section-id="{{ section.id }}"
 >
   {%- if section.blocks.size > 0 -%}
-    <div class="accordion-group__inner">
+    <div class="accordion-group__inner {{ content_width }}">
       <div class="accordion-group__items">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -103,6 +104,17 @@
     {
       "type": "header",
       "content": "Padding"
+    },
+    {
+      "type": "select",
+      "id": "content_width",
+      "label": "Content width",
+      "options": [
+        { "value": "wrapper", "label": "Normal" },
+        { "value": "wrapper--narrow", "label": "Narrow" },
+        { "value": "wrapper--full", "label": "Full width" }
+      ],
+      "default": "wrapper"
     },
     {
       "type": "range",
