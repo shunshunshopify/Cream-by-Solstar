@@ -426,11 +426,19 @@ p:empty {
 /* Narrow width: page-width column but capped with extra side padding */
 .section--narrow-width > * {
   grid-column: 2;
-  max-width: 720px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--page-margin);
   padding-right: var(--page-margin);
+}
+
+@media screen and (max-width: 749px) {
+  .section--narrow-width > * {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* For full-width sections, content spans all columns */
