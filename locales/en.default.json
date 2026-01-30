@@ -876,5 +876,30 @@
     "marquee": {
       "default_text": "We make things that work better and last longer."
     }
+  },
+  "text_defaults": {
+    "faq": "Frequently asked questions",
+    "are_purchases_final_sale": "Are purchases final sale?",
+    "when_will_order_arrive": "When will my order arrive?",
+    "where_are_products_made": "Where are your products made?",
+    "how_much_for_shipping": "How much is shipping?",
+    "accordion_heading": "FAQ",
+    "return_policy": "What is the return policy?",
+    "shipping": "Shipping information",
+    "manufacturing": "Manufacturing",
+    "discover_collection": "Discover the collection",
+    "shop_now_button_label": "Shop now",
+    "submit_button_label": "Submit",
+    "sign_up_button_label": "Sign up",
+    "button_label": "Learn more",
+    "popup_link": "Learn more",
+    "learn_more": "Learn more",
+    "materials": "Materials",
+    "care_instructions": "Care instructions",
+    "fit": "Fit",
+    "shop_our_latest_arrivals": "Shop our latest arrivals",
+    "be_bold": "Be bold",
+    "sign_up": "Sign up",
+    "cart": "Cart"
   }
 }
