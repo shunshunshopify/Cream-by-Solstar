@@ -414,6 +414,9 @@
     }
   },
   "sections": {
+    "onboarding": {
+      "no_content": "このセクションにはまだコンテンツがありません。"
+    },
     "marquee": {
       "name": "スクロールテキスト",
       "settings": {

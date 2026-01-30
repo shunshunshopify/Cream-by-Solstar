@@ -847,15 +847,92 @@
           "read_less_label": "\"Collapse\" label"
         }
       }
+    },
+    "map": {
+      "name": "Map",
+      "settings": {
+        "api_key": { "label": "Google Maps API key" },
+        "map_address": {
+          "label": "Map address",
+          "info": "Enter an address to center the map."
+        },
+        "enable_latlong": { "label": "Use latitude and longitude" },
+        "lat": {
+          "label": "Latitude",
+          "info": "Overrides the map address latitude."
+        },
+        "long": {
+          "label": "Longitude",
+          "info": "Overrides the map address longitude."
+        },
+        "zoom": {
+          "label": "Zoom level",
+          "info": "Set the initial zoom level of the map."
+        },
+        "style": {
+          "label": "Map style",
+          "options": {
+            "basic": "Basic",
+            "light": "Light",
+            "white_label": "White label",
+            "dark_label": "Dark"
+          }
+        },
+        "heading": { "label": "Heading" },
+        "heading_tag": {
+          "label": "Heading tag",
+          "options": { "h1": "H1", "h2": "H2", "h3": "H3", "h4": "H4" }
+        },
+        "address_content": { "label": "Address content" },
+        "button_label": { "label": "Button label" },
+        "button_style": {
+          "label": "Button style",
+          "options": {
+            "button": "Primary button",
+            "button-secondary": "Secondary button",
+            "link": "Link"
+          }
+        },
+        "image": { "label": "Image" },
+        "desktop_height": {
+          "label": "Desktop height",
+          "options": {
+            "image-height": "Match image height",
+            "screen-height-one-half": "50% of screen",
+            "screen-height-three-quarters": "75% of screen"
+          }
+        },
+        "mobile_height": {
+          "label": "Mobile height",
+          "options": {
+            "image-height--mobile": "Match image height",
+            "screen-height-one-half--mobile": "50% of screen",
+            "screen-height-three-quarters--mobile": "75% of screen"
+          }
+        },
+        "section_width": {
+          "label": "Section width",
+          "options": {
+            "page-width": "Page width",
+            "full-width": "Full width"
+          }
+        },
+        "color_scheme": { "label": "Color scheme" },
+        "padding-block-start": { "label": "Top padding" },
+        "padding-block-end": { "label": "Bottom padding" }
+      },
+      "presets": { "default": { "name": "Map" } }
     }
   },
   "info": {
     "optional_product_reference": "Optional product reference used for previews or overrides."
   },
   "settings": {
-    "background_toggle": "Show background"
+    "background_toggle": "Show background",
+    "width": "Width"
   },
   "options": {
+    "page_width": "Page width",
     "standard": "Standard",
     "wide": "Wide"
   },
