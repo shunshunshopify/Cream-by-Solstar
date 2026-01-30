@@ -425,8 +425,9 @@ p:empty {
 
 /* Narrow width: page-width column but capped with extra side padding */
 .section--narrow-width > * {
-  grid-column: 2;
-  max-width: 900px;
+  grid-column: 1 / -1;
+  max-width: min(1100px, calc(100% - var(--page-margin) * 2));
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--page-margin);
@@ -436,6 +437,7 @@ p:empty {
 @media screen and (max-width: 749px) {
   .section--narrow-width > * {
     max-width: none;
+    grid-column: 1 / -1;
     padding-left: 0;
     padding-right: 0;
   }
