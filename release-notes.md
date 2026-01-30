@@ -1,3 +1,14 @@
+# Release Notes - Version 3.2.19
+
+This release fixes localization schema errors, cleans up duplicate translation blocks, and improves the FAQ width behavior.
+
+## What's Changed
+
+### Fixes and improvements
+- [Localization] Added missing default/map/sticky ATC/tab collection/product description translations to satisfy theme-check MatchingTranslations.
+- [Localization] Removed duplicate `sections` blocks causing JSON syntax errors in locale files.
+- [FAQ] Narrow width now respects desktop spacing and mobile page margins (no unintended shrinking).
+
 # Release Notes - Version 3.2.18
 
 This release refines the tab collection’s featured CTA button so it matches the general button styling and alignment controls.
