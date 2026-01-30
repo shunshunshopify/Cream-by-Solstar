@@ -557,10 +557,10 @@
         "padding-block-end": 48
       }
     },
-    "section_DiEwfL": {
+    "section_y7WBnp": {
       "type": "section",
       "blocks": {
-        "text_RRGzfT": {
+        "text_EFeyTm": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
@@ -586,11 +586,11 @@
           },
           "blocks": {}
         },
-        "accordion_99pTR6": {
+        "accordion_f6tQhf": {
           "type": "accordion",
           "name": "t:names.accordion",
           "settings": {
-            "icon": "plus",
+            "icon": "caret",
             "dividers": true,
             "type_preset": "h5",
             "inherit_color_scheme": true,
@@ -605,21 +605,21 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "accordion_row_VB8nbr": {
+            "accordion_row_wtKxLk": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "購入後に不具合や気になる点があった場合、対応してもらえますか？",
+                "heading": "missing translation: \"t:text_defaults.faq\"",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_4ND3aY": {
+                "text_eT6fbx": {
                   "type": "text",
                   "settings": {
                     "text": "<p>すべてのお客様にご購入いただいた商品にご満足いただけるよう努めております。万が一ご満足いただけない場合は、お知らせください。誠心誠意対応させていただきます。</p>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -641,10 +641,10 @@
                 }
               },
               "block_order": [
-                "text_4ND3aY"
+                "text_eT6fbx"
               ]
             },
-            "accordion_row_gxrarM": {
+            "accordion_row_Yxb7BX": {
               "type": "_accordion-row",
               "settings": {
                 "heading": "購入した商品は返品不可ですか？",
@@ -653,12 +653,12 @@
                 "width": 20
               },
               "blocks": {
-                "text_WLakxR": {
+                "text_HqeWdM": {
                   "type": "text",
                   "settings": {
                     "text": "<p>一部の商品については返品をお受けできません。ご購入前に必ず返品種別を明記いたします。</p>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -680,10 +680,10 @@
                 }
               },
               "block_order": [
-                "text_WLakxR"
+                "text_HqeWdM"
               ]
             },
-            "accordion_row_FJUM7w": {
+            "accordion_row_ANLTtj": {
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
@@ -693,13 +693,13 @@
                 "width": 20
               },
               "blocks": {
-                "text_7HFUad": {
+                "text_nVmtYC": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>ご注文いただいた商品をできるだけ早く発送できるよう、迅速に対応いたします。ご注文の商品が発送され次第、詳細情報が記載されたメールが届きます。配達所要時間はお住まいの地域によって異なります。</p>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -721,10 +721,10 @@
                 }
               },
               "block_order": [
-                "text_7HFUad"
+                "text_nVmtYC"
               ]
             },
-            "accordion_row_yWpWwE": {
+            "accordion_row_8WkFL6": {
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
@@ -734,13 +734,13 @@
                 "width": 20
               },
               "blocks": {
-                "text_qDzfYt": {
+                "text_FRhJiJ": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>私たちの製品は、国内およびグローバルに製造されています。私たちは、商品が高品質で公正な価値であることを保証するために、製造パートナーを慎重に選択します。</p>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -762,10 +762,10 @@
                 }
               },
               "block_order": [
-                "text_qDzfYt"
+                "text_FRhJiJ"
               ]
             },
-            "accordion_row_QDg9Bp": {
+            "accordion_row_MMh6DW": {
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
@@ -775,13 +775,13 @@
                 "width": 20
               },
               "blocks": {
-                "text_nnyWFp": {
+                "text_kEyTXE": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>送料は、お客様の所在地とご注文の商品に基づいて計算されます。購入する前に、必ず送料をお知らせします。</p>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -803,22 +803,22 @@
                 }
               },
               "block_order": [
-                "text_nnyWFp"
+                "text_kEyTXE"
               ]
             }
           },
           "block_order": [
-            "accordion_row_VB8nbr",
-            "accordion_row_gxrarM",
-            "accordion_row_FJUM7w",
-            "accordion_row_yWpWwE",
-            "accordion_row_QDg9Bp"
+            "accordion_row_wtKxLk",
+            "accordion_row_Yxb7BX",
+            "accordion_row_ANLTtj",
+            "accordion_row_8WkFL6",
+            "accordion_row_MMh6DW"
           ]
         }
       },
       "block_order": [
-        "text_RRGzfT",
-        "accordion_99pTR6"
+        "text_EFeyTm",
+        "accordion_f6tQhf"
       ],
       "name": "t:names.faq_section",
       "settings": {
@@ -853,6 +853,6 @@
   "order": [
     "main",
     "product_recommendations_qggXJq",
-    "section_DiEwfL"
+    "section_y7WBnp"
   ]
 }
